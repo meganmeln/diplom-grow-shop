@@ -1,0 +1,159 @@
+section.TopBanner {
+    position: relative;
+    width: 100%;
+}
+
+section.TopBanner .Banner {
+    width: 100%;
+}
+
+section.TopBanner .Banner img {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+section.TopBanner .TopBannerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    /*transform: translateY(-30%);*/
+}
+
+section.TopBanner .TopBannerContent h1 {
+    color: #FFF;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.Discount {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 12px;
+    background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.Discount .DiscountTop h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.Discount .DiscountBottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Discount .DiscountBottom .DiscountBottomLeft {
+    position: relative;
+}
+
+.Discount .DiscountBottom .DiscountBottomLeft img {
+    position: absolute;
+    bottom: -32px;
+    right: -750px;
+    display: block;
+    width: 750px;
+    z-index: 0;
+}
+
+.Discount .DiscountBottom .DiscountBottomRight {
+    width: 400px;
+}
+
+.Discount .DiscountBottom .DiscountBottomRight form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    section.TopBanner .TopBannerContent h1 {
+        font-size: 79px;
+    }
+
+    .Discount .DiscountTop h2 {
+        font-size: 54px;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomLeft img {
+        right: -650px;
+        width: 650px;
+    }
+}
+
+@media (max-width: 1200px) {
+    section.TopBanner .TopBannerContent h1 {
+        font-size: 59px;
+    }
+
+    .Discount .DiscountTop h2 {
+        font-size: 44px;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomLeft img {
+        right: -550px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.TopBanner .TopBannerContent h1 {
+        font-size: 39px;
+    }
+
+    .Discount .DiscountTop h2 {
+        font-size: 38px;
+    }
+
+    .Discount {
+        padding: 27px;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomLeft img {
+        bottom: -27px;
+        right: -400px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Discount .DiscountTop h2 {
+        font-size: 32px;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomLeft img {
+        right: -200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Discount .DiscountBottom .DiscountBottomLeft img {
+        display: none;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomRight {
+        width: 100%;
+    }
+
+    .Discount .DiscountBottom .DiscountBottomRight form {
+        width: 100%;
+    }
+}

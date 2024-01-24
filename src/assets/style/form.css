@@ -1,0 +1,31 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.form input {
+    display: flex;
+    padding: 16px 32px;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #FFF;
+}
+
+@media (max-width: 991px) {
+    .form input {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+}

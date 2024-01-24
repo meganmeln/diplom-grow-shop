@@ -1,0 +1,122 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.products .product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.products .product .top {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.products .product .top button {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transition: .3s ease;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+}
+
+.products .product:hover .top button {
+    bottom: 15px;
+}
+
+.products.mobile .product .top button {
+    bottom: 15px;
+}
+
+.products .product .top img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.products .product .top .discont_procent {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    border-radius: 6px;
+    background: #393;
+    padding: 4px 8px;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.6px;
+}
+
+.products .product .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.products .product .bottom .title {
+    color: #282828;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.products .product .bottom .price_block {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.price_block .discont_price, .price_block .price {
+    color: #282828;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.price_block .price.old {
+    color: #8B8B8B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration: line-through;
+}
+
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products .product .top button {
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

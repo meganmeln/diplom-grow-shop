@@ -1,0 +1,73 @@
+.footerMain {
+    padding-bottom: 80px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 32px;
+}
+
+.contactInfo .left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+}
+
+.contactInfo .right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+}
+
+.contactInfo .contactInfoItem {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #F1F3F4;
+}
+
+.contactInfo .contactInfoItem:first-child {
+    flex-basis: calc(60% - 32px);
+}
+
+.contactInfo .contactInfoItem:nth-child(2) {
+    flex-basis: 40%;
+}
+
+.contactInfo .contactInfoItemTit {
+    color: #8B8B8B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.contactInfo .contactInfoItemData {
+    display: flex;
+    gap: 16px;
+}
+
+.contactInfo .contactInfoItemData p, .contactInfo .contactInfoItemData a {
+    color: #282828;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+@media (max-width: 991px) {
+    .contactInfo .contactInfoItem:first-child {
+        flex-basis: 100%;
+    }
+
+    .contactInfo .contactInfoItem:nth-child(2) {
+        flex-basis: 100%;
+    }
+}
